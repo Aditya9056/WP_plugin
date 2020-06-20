@@ -1,0 +1,38 @@
+{
+    "name": "wordpress/plugin",
+    "description": "This is my submission\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DAditya Jain    \u001b[D\u001b[D\u001b[Dsubmussui\u001b[D\u001b[D\u001b[D\u001b[i\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001bion for Worpress Custom Plugin Test.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Aditya Jain",
+            "email": "adityaj@tmu.ac.in"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "repositories": [
+            {
+                "type": "composer",
+                "url": "https://wpackagist.org"
+            }
+    ],
+
+    "require": {
+        "php": ">= 7.2.0",
+        "johnpbloch/wordpress": ">=5.4.1",
+        "wpackagist-plugin/akismet":"^4.1",
+        "wpackagist-theme/twentytwenty":"*"
+    },
+
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "wordpress"
+    }
+}
